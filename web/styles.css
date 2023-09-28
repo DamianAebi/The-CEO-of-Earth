@@ -4,8 +4,8 @@
     margin: 0 ;
 }
 
-li,a{
-    text-decoration:none;
+li, a{
+    text-decoration: none;
     list-style-type: none;
 }
 
@@ -13,6 +13,7 @@ li,a{
     --main-font-family: 'Crete Round', serif;
     --main-color: #FFFAEB;
     --secondary-color: #31270e;
+    --paragraph-font-family: 'Kreon', serif;
     /* Imprint MT Shadow */
 }
 
@@ -26,6 +27,7 @@ li,a{
 
 .main__container {
     height: 100vh;
+    position: relative;
 }
 
 .main__container__logo {
@@ -61,38 +63,40 @@ li,a{
     padding-top: 20px;
 }
 
-.egypt__intro {
-    margin-left: 25%;
+#egypt__intro {
     color: var(--main-color);
     font-family: 'Anton', 'sans-serif';
     font-size: 20px;
+    position: relative;
+    text-align: center;
+    right: 70px;
 }
 
-.egypt__header {
-    color: var(--main-color);
+#egypt__heading {
     font-family: 'Caesar Dressing', 'cursive';
+}
+
+#egypt__content__name {
+    color: #ffeec3;
+    font-family: 'Caesar Dressing', 'cursive';
+}
+
+.CEOs__content__heading {
+    color: var(--main-color);
     font-size: 55px;
     text-align: center;
 }
 
-.CEOs__content {
-    /*background-color: rgba(1,1,1,.5);*/
-    max-width: 800px;
-    margin: auto;
-}
-
-.CEOs__content_description {
+.CEOs__content__paragraphcontainer {
     background-color: rgba(255, 255, 255, 0.7);
-    position: absolute;
     width: 100%;
-    left: 0;
     padding: 10px 0;
 }
 
-.CEOs__content_description p {
+.CEOs__content__paragraph {
     color: var(--secondary-color);
     /*font-family: 'Playfair Display', serif ;*/
-    font-family: 'Kreon', serif;
+    font-family: var(--paragraph-font-family);
     font-size: 14px;
     text-align: center;
     max-width: 600px;
@@ -101,8 +105,61 @@ li,a{
 
 .CEOs__content__img {
     display: block;
-    margin: 0;
+    margin: 50px auto;
 }
+
+.CEOs__content__cvbutton {
+    background-image: url("imgs/button.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    padding-top: 10px;
+}
+
+.CEOs__content__cvbutton a {
+    text-decoration: none;
+}
+
+.CEOs__content__cvbutton p {
+    text-align: center;
+    color: var(--main-color);
+    font-family: var(--paragraph-font-family);
+}
+
+.CEOs__content__navigation {
+    position: absolute;
+    max-width: 600px;
+    width: 100%;
+    height: 20px;
+    left: 50%;
+    bottom: 50px;
+    transform: translate(-50%, -50%);
+}
+
+.CEOs__content__navigation__previous {
+    position: absolute;
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+.CEOs__content__navigation__next {
+    position: absolute;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+.CEOs__content__navigation img {
+    width: 50px;
+}
+
+#end {
+    background-image: url('imgs/background_footer.png');
+}
+
+
+
 
 
 
