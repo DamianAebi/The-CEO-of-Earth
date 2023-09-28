@@ -1,0 +1,118 @@
+*,*:before, *:after {
+    box-sizing: border-box ;
+    padding: 0 ;
+    margin: 0 ;
+}
+
+li,a{
+    text-decoration:none;
+    list-style-type: none;
+}
+
+:root {
+    --main-font-family: 'Crete Round', serif;
+    --main-color: #FFFAEB;
+    --secondary-color: #31270e;
+    /* Imprint MT Shadow */
+}
+
+#home {
+    background-image: url("imgs/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.main__container {
+    height: 100vh;
+}
+
+.main__container__logo {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
+.main__container__paragraph {
+    color: var(--main-color);
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.main__container__start img {
+    width: 80px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-50%, -50%);
+}
+
+#egypt {
+    background-image: url("imgs/background_egypt.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -150px;
+    padding-top: 20px;
+}
+
+.egypt__intro {
+    margin-left: 25%;
+    color: var(--main-color);
+    font-family: 'Anton', 'sans-serif';
+    font-size: 20px;
+}
+
+.egypt__header {
+    color: var(--main-color);
+    font-family: 'Caesar Dressing', 'cursive';
+    font-size: 55px;
+    text-align: center;
+}
+
+.CEOs__content {
+    /*background-color: rgba(1,1,1,.5);*/
+    max-width: 800px;
+    margin: auto;
+}
+
+.CEOs__content_description {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 10px 0;
+}
+
+.CEOs__content_description p {
+    color: var(--secondary-color);
+    /*font-family: 'Playfair Display', serif ;*/
+    font-family: 'Kreon', serif;
+    font-size: 14px;
+    text-align: center;
+    max-width: 600px;
+    margin: auto;
+}
+
+.CEOs__content__img {
+    display: block;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
