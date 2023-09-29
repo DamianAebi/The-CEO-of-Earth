@@ -33,8 +33,8 @@ li, a{
 .main__container__logo {
     display: block;
     margin: auto;
-    width: fit-content;
-    height: fit-content;
+    max-width: 450px;
+    width: 90%;
 }
 
 .main__container__paragraph {
@@ -66,7 +66,9 @@ li, a{
 #egypt__intro {
     color: var(--main-color);
     font-family: 'Anton', 'sans-serif';
-    font-size: 20px;
+    max-font-size: 20px;
+    min-font-size: 12px;
+    font-size: 2vh;
     position: relative;
     text-align: center;
     right: 70px;
@@ -83,14 +85,22 @@ li, a{
 
 .CEOs__content__heading {
     color: var(--main-color);
-    font-size: 55px;
+    font-size: 5vh;
     text-align: center;
 }
 
 .CEOs__content__paragraphcontainer {
     background-color: rgba(255, 255, 255, 0.7);
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 10px;
+    box-shadow: 0 0 10px rgba(148, 148, 148, 0.32);
+    max-height: 230px;
+    height: 25%;
+    overflow: hidden;
+}
+
+@media screen and (max-height: 900px) {
+
 }
 
 .CEOs__content__paragraph {
@@ -105,7 +115,9 @@ li, a{
 
 .CEOs__content__img {
     display: block;
-    margin: 50px auto;
+    margin: 2.2vh auto;
+    max-height: 358px;
+    height: 40%;
 }
 
 .CEOs__content__cvbutton {
@@ -138,13 +150,13 @@ li, a{
 
 .CEOs__content__navigation__previous {
     position: absolute;
-    left: 0;
+    left: 20px;
     transform: rotate(-90deg);
 }
 
 .CEOs__content__navigation__next {
     position: absolute;
-    right: 0;
+    right: 20px;
     transform: rotate(90deg);
 }
 
