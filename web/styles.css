@@ -166,27 +166,27 @@ li, a{
 
 #end {
     background-image: url('imgs/background_footer.png');
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 
 .end__thankyou {
     color: var(--main-color-footer);
     text-align: center;
-    padding-top: 20px;
     font-size: 30px;
 }
 
 .end__logo {
-    transform: translate(-50%, -100%);
-    top: 50%;
-    left: 50%;
-    position: relative;
     width: 400px;
 }
 
 .end__comingsoon {
     color: var(--main-color-footer);
     text-align: center;
-    margin-top: 230px;
     font-size: 15px;
 }
 
@@ -195,8 +195,6 @@ li, a{
     opacity: 50%;
     font-size: 12px;
     max-width: 600px;
-    margin: 30px auto 0 auto;
-    padding-left: 100px;
 }
 
 .end__credits a {
@@ -204,22 +202,16 @@ li, a{
     color: var(--main-color-footer);
 }
 
+.end__home {
+    transform: rotate(-90deg);
+}
+
 .end__copyright {
     color: var(--main-color-footer);
     opacity: 50%;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%);
     font-size: 10px;
 }
 
-.end__home {
-    position: absolute;
-    right: 50%;
-    bottom: 100px;
-    transform: translateX(50%) rotate(-90deg);
-}
 
 
 
