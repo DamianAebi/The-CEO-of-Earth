@@ -6,7 +6,6 @@
 
 li, a{
     text-decoration: none;
-    list-style-type: none;
 }
 
 :root {
@@ -14,6 +13,7 @@ li, a{
     --main-color: #FFFAEB;
     --secondary-color: #31270e;
     --paragraph-font-family: 'Kreon', serif;
+    --main-color-footer: #f6f3fd;
     /* Imprint MT Shadow */
 }
 
@@ -114,18 +114,16 @@ li, a{
     background-repeat: no-repeat;
     width: 200px;
     height: 100px;
-    margin: 20px auto;
-    padding-top: 10px;
+    margin: 0 auto;
 }
 
 .CEOs__content__cvbutton a {
     text-decoration: none;
-}
-
-.CEOs__content__cvbutton p {
+    display: block;
     text-align: center;
     color: var(--main-color);
     font-family: var(--paragraph-font-family);
+    padding-top: 10px;
 }
 
 .CEOs__content__navigation {
@@ -158,6 +156,58 @@ li, a{
     background-image: url('imgs/background_footer.png');
 }
 
+.end__thankyou {
+    color: var(--main-color-footer);
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.end__logo {
+    transform: translate(-50%, -100%);
+    top: 50%;
+    left: 50%;
+    position: relative;
+    width: 400px;
+}
+
+.end__comingsoon {
+    color: var(--main-color-footer);
+    text-align: center;
+    margin-top: 230px;
+    font-size: 15px;
+}
+
+.end__credits {
+    color: var(--main-color-footer);
+    opacity: 50%;
+    font-size: 12px;
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+    padding-left: 100px;
+}
+
+.end__credits a {
+    text-decoration: none;
+    color: var(--main-color-footer);
+}
+
+.end__copyright {
+    color: var(--main-color-footer);
+    opacity: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 10px;
+}
+
+.end__home {
+    position: absolute;
+    right: 50%;
+    bottom: 100px;
+    transform: translateX(50%) rotate(-90deg);
+}
 
 
 
