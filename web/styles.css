@@ -61,6 +61,10 @@ li, a{
     background-repeat: no-repeat;
     background-position-x: -150px;
     padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #egypt__intro {
@@ -99,10 +103,6 @@ li, a{
     overflow: hidden;
 }
 
-@media screen and (max-height: 900px) {
-
-}
-
 .CEOs__content__paragraph {
     color: var(--secondary-color);
     /*font-family: 'Playfair Display', serif ;*/
@@ -110,12 +110,11 @@ li, a{
     font-size: 14px;
     text-align: center;
     max-width: 600px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .CEOs__content__img {
     display: block;
-    margin: 2.2vh auto;
     max-height: 358px;
     height: 40%;
 }
@@ -126,7 +125,6 @@ li, a{
     background-repeat: no-repeat;
     width: 200px;
     height: 100px;
-    margin: 0 auto;
 }
 
 .CEOs__content__cvbutton a {
