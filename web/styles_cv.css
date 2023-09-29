@@ -24,6 +24,26 @@ main {
     padding: 20px 50px;
 }
 
+@media screen and (max-width: 600px){
+
+    .cv {
+        padding: 50px 50px;
+    }
+
+    .cv__introduction__picture {
+        width: 30%;
+    }
+
+}
+
+@media screen and (min-width: 600px){
+
+    .cv__introduction__picture {
+        width: 20%;
+    }
+
+}
+
 .cv__back {
     position: absolute;
     top: 15px;
@@ -50,10 +70,6 @@ main {
     font-family: 'Kreon', serif;
     font-size: 15px;
     opacity: 50%;
-}
-
-.cv__introduction_picture {
-    width: 20%;
 }
 
 .cv__textblock {
