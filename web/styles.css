@@ -171,13 +171,13 @@ li, a{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .end__thankyou {
     color: var(--main-color-footer);
     text-align: center;
-    font-size: 30px;
+    font-size: 3vh;
     width: 80%;
 }
 
@@ -191,13 +191,13 @@ li, a{
 
 .end__logo__container {
     width: 100%;
-    height: fit-content;
     margin-top: 10%;
+    height: 30%;
+    max-height: 275px;
 }
 
 .end__logo__container__logo {
-    max-width: 400px;
-    width: 90%;
+    height: 100%;
     margin: auto;
     display: block;
 }
@@ -205,14 +205,14 @@ li, a{
 .end__logo__container__comingsoon {
     color: var(--main-color-footer);
     text-align: center;
-    font-size: 15px;
+    font-size: 1.8vh;
     width: 100%;
 }
 
 .end__credits {
     color: var(--main-color-footer);
     opacity: 50%;
-    font-size: 12px;
+    font-size: 1.5vh;
     max-width: 600px;
 }
 
@@ -222,7 +222,12 @@ li, a{
 }
 
 .end__home {
+    height: 5%;
+}
+
+.end__home img {
     transform: rotate(-90deg);
+    height: 100%;
 }
 
 .end__copyright {
