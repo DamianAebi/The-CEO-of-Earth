@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Get CEO from URL. Define path of JSON with switch.
+    // Get CEO from URL. Define path of JSON by switching CEO.
+    let path;
     const urlParams = new URLSearchParams(window.location.search);
     const ceoValue = urlParams.get('CEO');
-    let path;
     switch (ceoValue) {
         case "Ramasses-II" :
             path = "./json/ramasses.json"
@@ -18,8 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
         .then((response) => response.json())
         .then((json_raw) => {
                 const json = json_raw[0];
-                // console.log(json[0]["ceo_name"]);
-                // console.log(cv_references_tag);
 
                 // create constant for JSON values, pointing to the correct HTML tags
                 const ceo_name_tag =
@@ -48,6 +46,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 // set values of tags above to values defined in JSON
                 ceo_name_tag.innerHTML = json["ceo_name"];
                 ceo_img_url_tag.src = json["ceo_img_url"];
+                ceo_age_span_tag.innerHTML = json["ceo_age_span"];
+                cv_motivation_tag.innerHTML = json["cv_motivation"];
+                cv_experience_tag.innerHTML = json["cv_experience"];
+                cv_education_tag.innerHTML = json["cv_education"];
+                cv_references_tag.innerHTML = json["cv_references"];
+                cv_hobbies_tag.innerHTML = json["cv_hobbies"];
             }
         );
 });
