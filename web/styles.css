@@ -19,8 +19,8 @@ li, a{
 
 #home {
     background-image: url("imgs/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    display: block;
+    padding: 0;
     background-position: center;
 }
 
@@ -110,7 +110,6 @@ li, a{
     padding: 10px 10px;
     box-shadow: 0 0 10px rgba(148, 148, 148, 0.32);
     max-height: 230px;
-    height: 25%;
     overflow: hidden;
 }
 

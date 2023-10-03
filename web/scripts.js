@@ -1,15 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    // Get CEO from URL. Define path of JSON by switching CEO.
+    // Get CEO from URL. Define path of JSON and link of backbutton by switching CEO.
     let path;
+    let link;
     const urlParams = new URLSearchParams(window.location.search);
     const ceoValue = urlParams.get('CEO');
     switch (ceoValue) {
         case "Ramasses-II" :
-            path = "./json/ramasses.json"
+            path = "./json/ramasses.json";
+            link = "index.html#egypt";
+            break;
+        case "Kyros-II":
+            path = "./json/kyros.json";
+            link = "index.html#persia";
             break;
         default :
             path = "./json/ramasses.json"
+            link = "index.html#egypt";
             break;
     }
 
@@ -52,6 +59,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 cv_education_tag.innerHTML = json["cv_education"];
                 cv_references_tag.innerHTML = json["cv_references"];
                 cv_hobbies_tag.innerHTML = json["cv_hobbies"];
+
+                // set back arrow link to point to ID of currently active CEO
+                document.getElementsByTagName("a")[0].href = link;
             }
         );
 });
