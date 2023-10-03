@@ -28,6 +28,14 @@ li, a{
 .main__container {
     height: 100vh;
     position: relative;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .main__container__logo {
@@ -58,18 +66,15 @@ li, a{
 
 #egypt {
     background-image: url("imgs/background_egypt.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position-x: -150px;
-    padding: 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
 }
 
-#egypt__intro {
+#persia {
+    background-image: url("imgs/background_persia.jpg");
+    background-position-x: -350px;
+}
+
+.main__container__intro {
     color: var(--main-color);
     font-family: 'Anton', 'sans-serif';
     max-font-size: 20px;
@@ -80,13 +85,17 @@ li, a{
     right: 70px;
 }
 
-#egypt__heading {
+.desert__heading {
     font-family: 'Caesar Dressing', 'cursive';
 }
 
 #egypt__content__name {
     color: #ffeec3;
-    font-family: 'Caesar Dressing', 'cursive';
+}
+
+#persia__content__name {
+    color: rgb(255, 244, 229);
+    text-shadow: rgba(93, 57, 34, 0.8) 5px 5px 10px;
 }
 
 .CEOs__content__heading {
@@ -119,6 +128,7 @@ li, a{
     display: block;
     max-height: 358px;
     height: 40%;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.43))
 }
 
 .CEOs__content__cvbutton {
