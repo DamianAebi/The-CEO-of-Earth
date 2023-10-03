@@ -74,6 +74,11 @@ li, a{
     background-position-x: -350px;
 }
 
+#macedon {
+    background-image: url("imgs/background_macedonia.jpg");
+    background-position-x: -150px;
+}
+
 .main__container__intro {
     color: var(--main-color);
     font-family: 'Anton', 'sans-serif';
@@ -115,7 +120,6 @@ li, a{
 
 .CEOs__content__paragraph {
     color: var(--secondary-color);
-    /*font-family: 'Playfair Display', serif ;*/
     font-family: var(--paragraph-font-family);
     font-size: 14px;
     text-align: center;
@@ -128,6 +132,10 @@ li, a{
     max-height: 358px;
     height: 40%;
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.43))
+}
+
+.alexander__content__img {
+    filter: drop-shadow(3px 3px 5px rgba(255, 255, 255, 0.64))
 }
 
 .CEOs__content__cvbutton {
