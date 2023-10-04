@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-
     const ceoParagraphContainers = document.getElementsByClassName("CEOs__content__paragraphcontainer");
     const ceoParagraphs = document.getElementsByClassName("CEOs__content__paragraph__large");
     const ceoParagraphButtons = document.getElementsByClassName("read__more");
@@ -25,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Change button text
         this.children[0].innerHTML = "Weniger lesen...";
 
-        // make it so "read more" banner is part of document flow again so it's not on top of text
+        // make it so "read more" banner is part of document flow again, so it's not on top of text
         this.style.position = "relative";
 
         this.removeEventListener("click", enlargeContainer);
@@ -45,5 +44,22 @@ document.addEventListener('DOMContentLoaded', function () {
         this.removeEventListener("click", shrinkContainer);
         this.addEventListener("click", enlargeContainer);
     }
+
+    anime({
+        targets: '.main__container__start img',
+        width: "90px",
+        bottom: "0px",
+        direction: 'alternate',
+        loop: true,
+        easing: 'easeInOutSine'
+    });
+
+    anime({
+        targets: 'main__container__start img:hover',
+        width: "100px",
+        bottom: "0px",
+        direction: 'alternate',
+        easing: 'easeInOutSine'
+    });
 
 });

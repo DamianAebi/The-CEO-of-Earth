@@ -68,11 +68,4 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementsByTagName("a")[0].href = link;
         }
     );
-
-    // enable "show more" button, if the text is too large for the container
-
-    const ceoParagraphContainers = document.getElementsByClassName("CEOs__content__paragraphcontainer");
-    const ceoParagraphs = document.getElementsByClassName("CEOs__content__paragraph__large");
-    console.log(ceoParagraphContainers.length + ", " + ceoParagraphs);
-
 });
