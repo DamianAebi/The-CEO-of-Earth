@@ -71,7 +71,8 @@ li, a{
 
 #persia {
     background-image: url("imgs/background_persia.jpg");
-    background-position-x: -350px;
+    /*background-position-x: -1250px;*/
+    background-position: right;
 }
 
 #macedon {
@@ -88,10 +89,12 @@ li, a{
     position: relative;
     text-align: center;
     right: 70px;
+    text-shadow: rgba(49, 49, 49, 0.53) 2px 2px 3px;
 }
 
 .desert__heading {
     font-family: 'Caesar Dressing', 'cursive';
+    text-shadow: rgba(58, 58, 58, 0.49) 4px 4px 4px;
 }
 
 #egypt__content__name {
@@ -100,7 +103,6 @@ li, a{
 
 #persia__content__name {
     color: rgb(255, 244, 229);
-    text-shadow: rgba(93, 57, 34, 0.8) 5px 5px 10px;
 }
 
 .CEOs__content__heading {
@@ -116,6 +118,7 @@ li, a{
     box-shadow: 0 0 10px rgba(148, 148, 148, 0.32);
     max-height: 230px;
     overflow: hidden;
+    position: relative;
 }
 
 .CEOs__content__paragraph {
@@ -127,6 +130,13 @@ li, a{
     margin: 0 auto;
 }
 
+.read__more {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: none;
+}
+
 .CEOs__content__img {
     display: block;
     max-height: 358px;
@@ -136,6 +146,10 @@ li, a{
 
 .alexander__content__img {
     filter: drop-shadow(3px 3px 5px rgba(255, 255, 255, 0.64))
+}
+
+.CEOs__content__timespan {
+    color: var(--main-color);
 }
 
 .CEOs__content__cvbutton {
