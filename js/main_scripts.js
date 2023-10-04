@@ -45,6 +45,9 @@ document.addEventListener('DOMContentLoaded', function () {
         this.addEventListener("click", enlargeContainer);
     }
 
+    // animations:
+
+    // idle animation of start button
     anime({
         targets: '.main__container__start img',
         width: "90px",
@@ -54,12 +57,90 @@ document.addEventListener('DOMContentLoaded', function () {
         easing: 'easeInOutSine'
     });
 
-    anime({
-        targets: 'main__container__start img:hover',
-        width: "100px",
-        bottom: "0px",
-        direction: 'alternate',
-        easing: 'easeInOutSine'
-    });
+    // brightness animations for arrow buttons
+    function brighten() {
+        anime({
+            targets: this,
+            filter: [
+                'brightness(' + 1 + ')', // Start with initial brightness
+                'brightness(' + 1.1 + ')' // End with target brightness
+            ],
+            duration: 100,
+            easing: 'easeInOutSine'
+        });
+    }
+    function darken() {
+        anime({
+            targets: this,
+            filter: [
+                'brightness(' + 1.1 + ')', // Start with initial brightness
+                'brightness(' + 1 + ')' // End with target brightness
+            ],
+            duration: 100,
+            easing: 'easeInOutSine'
+        });
+    }
+
+    function flash() {
+        anime({
+            targets: this,
+            filter: [
+                'brightness(' + 1.1 + ')', // Start with initial brightness
+                'brightness(' + 1.2 + ')' // End with target brightness
+            ],
+            duration: 30,
+            easing: 'easeInOutSine'
+        });
+    }
+
+    // scale animations for cv buttons
+    function scale() {
+        anime({
+            scale: 1.05,
+            targets: this,
+            duration: 500,
+            easing: 'easeInOutSine'
+        });
+    }
+
+    function normalizeScale() {
+        anime({
+            scale: 1,
+            targets: this,
+            duration: 500,
+            easing: 'easeInOutSine'
+        });
+    }
+
+    function shrink() {
+        anime({
+            scale: 0.95,
+            targets: this,
+            duration: 30,
+            easing: 'easeInOutSine'
+        });
+    }
+
+    // add brightening transitions to start-arrow
+    const startImg = document.querySelector(".main__container__start img");
+    startImg.addEventListener("mouseover", brighten);
+    startImg.addEventListener("mouseleave", darken);
+    startImg.addEventListener("mousedown", flash);
+
+    // add scale transitions to cv buttons
+    const cvButtons = document.getElementsByClassName("CEOs__content__cvbutton");
+    for (let i = 0; i < cvButtons.length; i++) {
+        cvButtons[i].addEventListener("mouseover", scale);
+        cvButtons[i].addEventListener("mouseleave", normalizeScale);
+        cvButtons[i].addEventListener("mousedown", shrink);
+    }
+
+    // add brightening transitions to arrow buttons
+    const arrowImgs = document.querySelectorAll("img[src='imgs/arrow.png']")
+    for (let i = 0; i < arrowImgs.length; i++) {
+        arrowImgs[i].addEventListener("mouseover", brighten);
+        arrowImgs[i].addEventListener("mouseleave", darken);
+        arrowImgs[i].addEventListener("mousedown", flash);
+    }
 
 });

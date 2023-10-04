@@ -24,7 +24,6 @@ li, a{
     background-position: center;
 }
 
-
 .main__container {
     height: 100vh;
     position: relative;
@@ -177,6 +176,10 @@ li, a{
     font-family: var(--paragraph-font-family);
     padding: 10px 0;
     z-index: 10;
+}
+
+.CEOs__content__cvbutton a:hover {
+    color: var(--main-color);
 }
 
 .CEOs__content__navigation {
