@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    console.log("boop");
+    console.log("boop 2");
     function adjustHeight() {
         const windowHeight = window.innerHeight;
-        document.querySelector('.main__container').style.height = windowHeight + 'px';
+        document.querySelectorAll('.main__container').forEach(container => container.style.height = windowHeight + 'px');
     }
 
     // Call adjustHeight when the page loads and on window resize
