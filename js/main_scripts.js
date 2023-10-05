@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    console.log("boop 2");
+    // function to fix issue that on mobile the browser search bar messes up the layout
     function adjustHeight() {
         const windowHeight = window.innerHeight;
         document.querySelectorAll('.main__container').forEach(container => container.style.height = windowHeight + 'px');
