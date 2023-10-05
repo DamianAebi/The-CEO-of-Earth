@@ -1,7 +1,14 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-    window.scrollTo(0,1);
-    console.log("whoop");
+    console.log("boop");
+    function adjustHeight() {
+        const windowHeight = window.innerHeight;
+        document.querySelector('.main__container').style.height = windowHeight + 'px';
+    }
+
+    // Call adjustHeight when the page loads and on window resize
+    window.addEventListener('load', adjustHeight);
+    window.addEventListener('resize', adjustHeight);
 
     const ceoParagraphContainers = document.getElementsByClassName("CEOs__content__paragraphcontainer");
     const ceoParagraphs = document.getElementsByClassName("CEOs__content__paragraph__large");
