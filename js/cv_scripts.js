@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', function () {
             path = "./json/alexander.json";
             link = "index.html#macedon";
             break;
+        case "Qin-Shi-Huang":
+            path = "./json/qin-shi-huang.json";
+            link = "index.html#qin";
+            break;
         default :
             path = "./json/ramasses.json"
             link = "index.html#egypt";

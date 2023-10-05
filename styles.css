@@ -80,6 +80,11 @@ li, a{
     background-position-x: -150px;
 }
 
+#qin {
+    background-image: url("imgs/background_qin.jpg");
+    background-position: center;
+}
+
 .main__container__intro {
     color: var(--main-color);
     font-family: 'Anton', 'sans-serif';
@@ -99,6 +104,10 @@ li, a{
 
 #egypt__content__name {
     color: #ffeec3;
+}
+
+#persia__content__name {
+    color: rgb(255, 244, 229);
 }
 
 #persia__content__name {
