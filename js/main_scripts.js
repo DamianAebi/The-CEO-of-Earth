@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     window.scrollTo(0,1);
+    console.log("whoop");
 
     const ceoParagraphContainers = document.getElementsByClassName("CEOs__content__paragraphcontainer");
     const ceoParagraphs = document.getElementsByClassName("CEOs__content__paragraph__large");
