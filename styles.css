@@ -84,6 +84,10 @@ li, a{
     background-image: url("imgs/background_qin.jpg");
 }
 
+#rome {
+    background-image: url("imgs/background_rome.jpg");
+}
+
 .main__container__intro {
     color: var(--main-color);
     font-family: 'Anton', 'sans-serif';
