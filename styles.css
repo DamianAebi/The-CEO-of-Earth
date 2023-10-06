@@ -82,7 +82,6 @@ li, a{
 
 #qin {
     background-image: url("imgs/background_qin.jpg");
-    background-position: center;
 }
 
 .main__container__intro {
@@ -166,6 +165,7 @@ li, a{
 
 .CEOs__content__timespan {
     color: var(--main-color);
+    text-shadow: rgb(0, 0, 0) 2px 1px 2px;
 }
 
 .CEOs__content__cvbutton {
